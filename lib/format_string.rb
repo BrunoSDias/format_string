@@ -1,5 +1,13 @@
 require "format_string/version"
 
 module FormatString
-  # Your code goes here...
+  class Moeda
+    def self.br(numero)
+      "R$#{numero}"
+    end 
+
+    def self.en(numero)
+      "$#{numero}"
+    end 
+  end
 end
